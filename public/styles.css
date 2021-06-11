@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+high-low {
+  font-size: 1rem;
+}
+
+h1 {
+  margin:0;
+}
+
+form, moods {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+moods {
+  margin-left: 2rem;
+}
+
+moods > p {
+  margin: 0;
+}
+
+row {
+  display: flex;
+}

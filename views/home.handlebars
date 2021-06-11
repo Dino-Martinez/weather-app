@@ -1,0 +1,15 @@
+<section>
+  <h1>{{apiResult.name}}</h1>
+  <p>{{#each apiResult.weather}} <p>{{description}}</p> {{/each}}</p>
+  <h1>{{apiResult.main.temp}}°</h1>
+  <high-low>H:{{apiResult.main.temp_max}}° | L:{{apiResult.main.temp_min}}°</high-low>
+</section>
+
+<row>
+  <form action="/" method="post">
+    <label for="mood">What's your mood today?</label>
+    <input type="text" name="mood" placeholder="Enter a mood">
+    <button type="submit" name="submit">Submit</button>
+  </form>
+  <moods>Today's moods:{{#each moods}} <p>- {{this}}</p> {{/each}}</moods>
+</row>
